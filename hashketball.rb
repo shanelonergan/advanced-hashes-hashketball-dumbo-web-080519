@@ -228,7 +228,7 @@ def big_shoe_rebounds
     team_data[:players].each do | players |
       players.each do | name, data|
         binding.pry
-        if big_shoe = 0
+        if big_shoe == 0
           big_shoe = data[:shoe]
           big_player = name
         elsif data[:shoe] > big_shoe
