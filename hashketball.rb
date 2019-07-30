@@ -224,7 +224,7 @@ end
 
 def big_shoe_rebounds
   big_shoe = 0
-  rebounds = 0
+  rebounds = nil
   game_hash.each do | location, team_data |
     team_data[:players].each do | players |
       players.each do | name, data|
