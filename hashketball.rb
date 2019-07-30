@@ -232,9 +232,6 @@ def big_shoe_rebounds
         elsif data[:shoe] > big_shoe[1]
           big_shoe = [name, data[:shoe]]
         end
-
-        big_shoe
-        binding.pry
       end
     end
   end
