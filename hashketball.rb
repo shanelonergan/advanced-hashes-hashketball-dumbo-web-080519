@@ -234,7 +234,7 @@ def big_shoe_rebounds
         elsif data[:shoe] > big_shoe
           big_shoe = data[:shoe]
           big_player = name
-          
+
         end
       end
     end
