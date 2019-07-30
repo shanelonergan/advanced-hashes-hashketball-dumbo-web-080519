@@ -224,6 +224,7 @@ end
 
 def big_shoe_rebounds
   big_shoe = 0
+  rebounds = 0
   game_hash.each do | location, team_data |
     team_data[:players].each do | players |
       players.each do | name, data|
@@ -235,7 +236,6 @@ def big_shoe_rebounds
           big_shoe = data[:shoe]
           big_player = name
           rebounds = data[:rebounds]
-          binding.pry
         end
       end
     end
