@@ -228,7 +228,6 @@ def big_shoe_rebounds
     team_data[:players].each do | players |
       players.each do | name, data|
         if big_shoe = 0
-          binding.pry
           big_shoe = data[:shoe]
           big_player = name
         else
