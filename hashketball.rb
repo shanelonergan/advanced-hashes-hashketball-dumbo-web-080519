@@ -221,3 +221,13 @@ def player_stats(name)
     end
   end
 end
+
+def big_shoe_rebounds
+  big_shoe = game_hash.each do
+    team_data[:players].reduce(nil) do | memo, (key, value) |
+      memo = value[0] if !memo
+      binding.pry
+    end
+  end
+  
+end
