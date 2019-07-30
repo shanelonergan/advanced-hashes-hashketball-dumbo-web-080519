@@ -281,7 +281,7 @@ end
   #describe '#long_name_steals_a_ton?' do
 
     #it 'returns true' do
-      expect(long_name_steals_a_ton?).to eq(true)
+      #expect(long_name_steals_a_ton?).to eq(true)
     #end
 
   #end
