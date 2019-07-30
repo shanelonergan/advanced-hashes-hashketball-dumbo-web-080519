@@ -223,14 +223,18 @@ def player_stats(name)
 end
 
 def big_shoe_rebounds
-  big_shoe = nil
+  big_shoe = 0
   game_hash.each do | location, team_data |
     team_data[:players].each do | players |
       players.each do | name, data|
-        if big_shoe = nil
-          big_shoe = [name, data[:shoe]]
-        elsif data[:shoe] > big_shoe[1]
-          big_shoe = [name, data[:shoe]]
+        if big_shoe = 0
+          big_shoe = data[:shoe]
+          big_player = name
+        else
+          if data[:shoe] > big_shoe
+            big_shoe = data[:shoe]
+            big_player = name
+          end 
         end
       end
     end
