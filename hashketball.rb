@@ -225,8 +225,9 @@ end
 def big_shoe_rebounds
   big_shoe = game_hash.each do | location, team_data |
     team_data[:players].reduce(nil) do | memo, (key, value) |
-      memo = value[0] if !memo
       binding.pry
+      memo = value[0] if !memo
+
     end
   end
 
