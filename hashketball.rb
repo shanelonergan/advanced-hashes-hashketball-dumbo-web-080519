@@ -226,12 +226,15 @@ def big_shoe_rebounds
   game_hash.each do | location, team_data |
     team_data[:players].each do | players |
       players.each do | name, data|
-        if
+        if !big_shoe
           big_shoe = [name, data[:shoe]]
-
+          
         elsif data[:shoe] > big_shoe[1]
           big_shoe = [name, data[:shoe]]
         end
+
+        big_shoe
+        binding.pry
       end
     end
   end
