@@ -234,7 +234,7 @@ def big_shoe_rebounds
           if data[:shoe] > big_shoe
             big_shoe = data[:shoe]
             big_player = name
-          end 
+          end
         end
       end
     end
