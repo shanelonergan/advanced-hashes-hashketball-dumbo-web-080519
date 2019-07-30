@@ -233,7 +233,7 @@ def big_shoe_rebounds
           binding.pry
         else
           if data[:shoe] > big_shoe
-            
+
             big_shoe = data[:shoe]
             big_player = name
           end
